@@ -1,0 +1,130 @@
+.cabecera{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+
+.gestor{
+    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+}
+
+#derecho{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-left: 1px solid;
+    gap: 15px;
+}
+
+#izquierdo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.izquierda{
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+}
+
+.derecha{
+    width: 50%;
+    margin-left: 10%;
+}
+
+#texto2{
+    width: 793px;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6em;
+}
+
+#imagen2{
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#titulo2{
+    margin-left: 46%;
+    width: 100px;
+    text-align: center;
+    height: 130%;
+}
+
+#boton{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius:50px;
+    border: 3px solid rgb(88, 135, 189);
+    text-align: center;
+    width:40%;
+    
+}
+
+@media only screen and (max-width: 1100px) {
+    .contenido{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 100px;
+    }
+
+    .cabecera{
+        height: 200px;
+    }
+
+    .gestor{
+        gap: 0px;
+    }
+
+    .logo, .datos{
+        visibility: hidden;
+    }
+
+    #imagen2{
+        margin-top: 30px;
+        margin-left: 170px;
+        width: 600px;
+        height: 300px;
+    }
+
+    .izquierda{
+        height: 20px;
+        margin: 5px;
+        margin-left: 25%;
+    }
+
+    #derecho{
+        border-left: none;
+        border-top: 1px solid;
+
+    }
+
+    #titulo2{
+        margin-top: 20px;
+    }
+
+    #texto2{
+        margin-left: 160px;
+        width: 600px;
+        height: 300px;
+    }
+    #boton{
+        border: 6px solid rgb(88, 135, 189);
+        height: 50px;
+    }
+}

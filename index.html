@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de contenido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="javascript/main.js"></script>
+</head>
+<body>
+    <div class="gestor">
+
+        <div class="cabecera">
+            <div class="logo">
+                <p><br></p>
+                <img src="img/logo.png" title="BUAP">
+            </div>
+            <div class="titulo">
+                <p><br>Gestor de Contenido</p>
+            </div>
+            <div class="datos">
+                <p><br><br>Datos</p>
+                <p>201858235 - Alcantar Perez Jose Luis</br>201804070 - Rodriguez Sanchez Eduardo</p>
+            </div>
+        </div>
+
+        <div class="contenido">
+            <div id="izquierdo">
+                    <input class="izquierda" name="titulo" type="text" placeholder="Inserta un titulo" id="titulo"></input>
+
+                    <input class="izquierda" name="imagen" type="text" placeholder="Ingresa una URL" id="imagen"></input>
+
+                    <input class="izquierda" name="texto" type="text" placeholder="Ingresa un texto" id="texto"></input>
+
+
+                    <button class="izquierda" name="button" id="boton" onclick="cambiarElementos()">Enviar</button>
+            </div>
+
+            <div id="derecho">
+                <input class="derecha" name="titulo2" type="text" value="GATO" id="titulo2" readonly></input>
+
+                <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/10E9B/production/_109757296_gettyimages-1128004359.jpg" class="derecha" id="imagen2"></img>
+
+                <textarea class="derecha" id="texto2" readonly>En los últimos años se ha popularizado mucho un nuevo término felino el cual seguramente has escuchado alguna vez, si es que tienes un felino en casa; el término del cual hablamos el día de hoy es gato de interior, que también se puede conocer en inglés como indoor cat, o inclusive se puede escuchar gato indoor, pero ¿sabes qué significa?</textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
